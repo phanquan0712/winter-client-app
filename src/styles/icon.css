@@ -1,0 +1,7 @@
+.reactions {
+   display: grid;
+   grid-template-columns: repeat(5, 50px);
+   text-align: center;
+   cursor: pointer;
+   gap: 10px;
+}

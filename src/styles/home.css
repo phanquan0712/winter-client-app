@@ -1,0 +1,34 @@
+
+
+@media screen and (max-width: 768px) {
+   .col-md-8, .col-md-4 {
+      padding: 0  15px !important;
+   }
+   .suggestions {
+      display: none;
+   }
+}
+   
+
+
+.status {
+   background-color: rgb(129, 123, 123);
+   border-radius: 10px;
+   padding: 10px;
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+.status .thinking {
+   background: #ddd;
+   width: 100%;
+   padding: 10px;
+   border-radius: 50rem;
+   transition: 0.2 ease;
+   cursor: pointer;
+}
+
+.status .thinking:hover {
+   background:#fff ;
+}

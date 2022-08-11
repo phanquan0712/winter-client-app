@@ -1,0 +1,11 @@
+.explore {
+   width: 100%;
+   max-width: calc(1000px - 200px);
+   margin: 0 auto;
+   padding: 60px 0;
+}
+
+.explore .suggestion_user {
+   background-color: #fff;
+}
+

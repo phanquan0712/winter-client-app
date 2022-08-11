@@ -1,0 +1,94 @@
+.detail_post{
+   width: 100%;
+   max-width: calc(1000px - 40px);
+   display: flex;
+   margin: 10px auto;
+   height: calc(100vh - 180px);
+}
+
+.detail_post-images {
+   flex: 3;
+   height: 100%;
+}
+
+.detail_post-images  .carousel {
+   height: 100%;
+}
+
+.detail_post-images  .carousel .carousel-inner {
+   height: 100%;
+}
+
+
+.detail_post-images .carousel .carousel-item {
+   max-height: none;
+   height: 100%;
+   width: 100%;
+}
+
+.detail_post-images .carousel .carousel-item img {
+   height: 100%;
+   width: 100%;
+}
+
+.detail_post-content {
+   flex: 2;
+   position: relative;
+   overflow: hidden;
+}
+
+.detail_post-content .comment-footer {
+   background-color: #fff;
+}
+
+@media (max-width: 766px) {
+   .detail_post {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      margin: 0;
+      position: relative;
+   }
+   
+   .detail_post .detail_post-images {
+      z-index: 1;
+      width: 100%;
+      height: calc(100% - 300px);
+      position: absolute;
+      overflow: hidden;
+   }
+
+   .detail_post .detail_post-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      flex: none !important;
+   }
+
+   .detail_post .detail_post-content .card_header {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 2;
+   }
+
+   .detail_post .detail_post-content .post-content,
+   .detail_post .detail_post-content .list-comment {
+      display: none;
+   }
+
+   .detail_post .detail_post-content .comment-footer {
+      position: absolute;
+      bottom: 20% !important;
+      right: 0 !important;
+      width: 100%;
+      background-color: #fff;
+      z-index: 3;
+   }
+   
+}
